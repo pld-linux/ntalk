@@ -6,3 +6,5 @@ FLAGS=wait
 USER=root
 SERVER=tcpd
 DAEMON=/usr/sbin/in.ntalkd
+FAMILY=ipv4
+
