@@ -16,7 +16,7 @@ Source0:	ftp://ftp.linux.org.uk/pub/linux/Networking/netkit/netkit-%{name}-%{ver
 # Source0-md5:	e3c57208f8644ae206dab5e236daf7b3
 Source1:	%{name}d.inetd
 Source2:	talkd.inetd
-Source3:	%{name}-non-english-man-pages.tar.bz2
+Source3:	http://www.mif.pg.gda.pl/homepages/ankry/man-PLD/%{name}-non-english-man-pages.tar.bz2
 # Source3-md5:	730be3085782af4ff21151d9c106549d
 Patch0:		netkit-%{name}-misc.patch
 Patch1:		%{name}-include.patch
