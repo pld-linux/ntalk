@@ -89,9 +89,9 @@ make RPM_OPT_FLAGS="$RPM_OPT_FLAGS -w -I%{_includedir}/ncurses"
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT/usr/{bin,sbin,man/{man1,man8}}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_sbindir},%{_mandir}/man{1,8}}
 
-make INSTALLROOT=$RPM_BUILD_ROOT install
+make install INSTALLROOT=$RPM_BUILD_ROOT MANDIR=%{_mandir}
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man[18]/* \
 	README BUGS
