@@ -1,6 +1,7 @@
 SERVICE_NAME=talk
 SOCK_TYPE=dgram
 PROTOCOL=tcp
+PORT=517
 FLAGS=wait
 USER=root
 SERVER=tcpd

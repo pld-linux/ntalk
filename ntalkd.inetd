@@ -1,6 +1,7 @@
 SERVICE_NAME=ntalk
 SOCK_TYPE=dgram
 PROTOCOL=udp
+PORT=518
 FLAGS=wait
 USER=root
 SERVER=tcpd
