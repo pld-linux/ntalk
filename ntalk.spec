@@ -9,7 +9,7 @@ Summary(tr):	Internet üzerinde birebir konuşma - talk - sistemi
 Summary(uk):	äÅÍÏÎ ÔÁ ËÌ¦¤ÎÔ talk
 Name:		ntalk
 Version:	0.17
-Release:	5
+Release:	6
 License:	BSD
 Group:		Applications/Networking
 Source0:	ftp://ftp.linux.org.uk/pub/linux/Networking/netkit/netkit-%{name}-%{version}.tar.gz
