@@ -13,7 +13,7 @@ Source:		ftp://sunsite.unc.edu/pub/Linux/system/network/chat/netkit-ntalk-%{vers
 Patch0:		netkit-ntalk-misc.patch
 Patch1:		netkit-ntalk-install.patch
 Patch2:		netkit-ntalk-otalk.patch
-Requires:	inetd
+Requires:	inetdaemon
 BuildRequires:	ncurses-devel
 Obsoletes:	talk
 Buildroot:	/tmp/%{name}-%{version}-root
