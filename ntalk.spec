@@ -5,7 +5,7 @@ Summary(pl):	Klient talk do rozmów jeden-na-jeden w Internecie
 Summary(tr):	Internet üzerinde birebir konuþma - talk - sistemi
 Name:		ntalk
 Version:	0.17
-Release:	3
+Release:	4
 License:	BSD
 Group:		Applications/Networking
 Group(de):	Applikationen/Netzwerkwesen
@@ -15,6 +15,7 @@ Source1:	%{name}d.inetd
 Source2:	talkd.inetd
 Source3:	%{name}-non-english-man-pages.tar.bz2
 Patch0:		netkit-%{name}-misc.patch
+Patch1:		%{name}-include.patch
 BuildRequires:	ncurses-devel >= 5.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	talk
@@ -85,7 +86,8 @@ göreceklerdir.
 
 %prep
 %setup -q -n netkit-ntalk-%{version}
-%patch -p1
+%patch0 -p1
+%patch1 -p1
 
 %build
 ./configure --with-c-compiler=gcc
