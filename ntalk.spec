@@ -5,7 +5,7 @@ Summary(pl):	Klient talk do rozmów jeden-na-jeden w Internecie
 Summary(tr):	Internet üzerinde birebir konuþma - talk - sistemi
 Name:		ntalk
 Version:	0.17
-Release:	0
+Release:	1
 License:	BSD
 Group:		Applications/Networking
 Group(pl):	Aplikacje/Sieciowe
@@ -82,7 +82,7 @@ tarafýn yazdýklarýný ise üst kýsýmda göreceklerdir.
 
 %build
 LDLAGS="-s" \
-./configure
+./configure --with-c-compiler=gcc
 %{__make}
 
 %install
