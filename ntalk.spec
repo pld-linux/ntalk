@@ -18,7 +18,7 @@ Patch2:		netkit-ntalk-otalk.patch
 Requires:	inetdaemon
 BuildRequires:	ncurses-devel
 Obsoletes:	talk
-Prereq:		rc-inetd
+Prereq:		rc-inetd >= 0.8.1
 Buildroot:	/tmp/%{name}-%{version}-root
 
 %description
@@ -110,14 +110,14 @@ rm -rf $RPM_BUILD_ROOT
 
 %post
 if [ -f /var/lock/subsys/rc-inetd ]; then
-	/etc/rc.d/init.d/rc-inetd restart 1>&2
+	/etc/rc.d/init.d/rc-inetd reload 1>&2
 else
 	echo "Type \"/etc/rc.d/init.d/rc-inetd start\" to start inet sever" 1>&2
 fi
 
 %postun
 if [ -f /var/lock/subsys/rc-inetd ]; then
-	/etc/rc.d/init.d/rc-inetd stop
+	/etc/rc.d/init.d/rc-inetd reload
 fi
 
 %files
@@ -126,9 +126,9 @@ fi
 
 %attr(711,root,root) %{_sbindir}/*
 %{_mandir}/man8/*
+%attr(640,root,root) %config(noreplace) %verify(not mtime md5 size) /etc/sysconfig/rc-inetd/*
 
 %files client
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/talk
-%attr(640,root,root) %config(noreplace) %verify(not mtime md5 size) /etc/sysconfig/rc-inetd/*
 %{_mandir}/man1/talk.1.gz
