@@ -4,7 +4,9 @@ Summary(es):	DiАlogo de cliente charlas uno a uno en internet
 Summary(fr):	Client talk pour les conversations Ю deux sur l'Internet
 Summary(pl):	Klient talk do rozmСw jeden-na-jeden w Internecie
 Summary(pt_BR):	Conversa de cliente para um-em-um para Internet
+Summary(ru):	Демон и клиент talk
 Summary(tr):	Internet Эzerinde birebir konuЧma - talk - sistemi
+Summary(uk):	Демон та кл╕╓нт talk
 Name:		ntalk
 Version:	0.17
 Release:	5
@@ -46,12 +48,20 @@ umo©liwia komunikacjЙ miЙdzy u©ytkownikami na rС©nych systemach.
 Este pacote fornece um cliente e um daemon para o protocolo talk, que
 permite a conversa um-para-um entre usuАrios em diferentes sistemas.
 
+%description -l ru
+В этом пакете содержится клиент и демон протокола Internet talk, который
+позволяет организовать чат между пользователями на разных системах.
+
 %description -l tr
 Bu paket internet talk hizmeti iГin bir istemci ve sunucu
 iГermektedir. Bu program 'konuЧmak' isteyen kiЧilerin terminalinde iki
 bЖlЭm aГacaktЩr. KullanЩcЩlardan her biri kendi yazdЩklarЩnЩ ekranЩn
 alt kЩsmЩnda, karЧЩ tarafЩn yazdЩklarЩnЩ ise Эst kЩsЩmda
 gЖreceklerdir.
+
+%description -l uk
+Цей пакет м╕стить кл╕╓нт та демон протоколу Internet talk, що дозволя╓
+орган╕зувати чат м╕ж користувачами на р╕зних системах.
 
 %package -n ntalkd
 Summary:	Talk daemon for one-on-one Internet chatting
