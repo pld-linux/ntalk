@@ -5,7 +5,7 @@ Summary(pl):	Klient talk do rozmów jeden-na-jeden w Internecie
 Summary(tr):	Internet üzerinde birebir konuþma - talk - sistemi
 Name:		ntalk
 Version:	0.16
-Release:	3
+Release:	4
 License:	BSD
 Group:		Applications/Networking
 Group(pl):	Aplikacje/Sieciowe
