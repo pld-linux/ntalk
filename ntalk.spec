@@ -48,7 +48,7 @@ Summary(de):    Talk-client für 1:1-Internet-Schwätzchen.
 Summary(fr):    Client talk pour les conversations à deux sur l'Internet.
 Summary(pl):    Klient talk do rozmów jeden-na-jeden w Internecie.
 Summary(tr):    Internet üzerinde birebir konuþma - talk - sistemi.
-Group:          Aplications/Networking
+Group:          Applications/Networking
 Group(pl):      Aplikacje/Sieciowe
 Requires:	%{name} = %{version}
 
