@@ -79,11 +79,11 @@ tarafýn yazdýklarýný ise üst kýsýmda göreceklerdir.
 %setup -q -n netkit-ntalk-0.11
 %patch0 -p1
 %patch1 -p1
-%patch2 -p1 -b .glibc21
+%patch2 -p1
 
 %build
 
-make RPM_OPT_FLAGS="$RPM_OPT_FLAGS -w"
+make RPM_OPT_FLAGS="$RPM_OPT_FLAGS -w -I/usr/include/ncurses"
 
 %install
 rm -rf $RPM_BUILD_ROOT
