@@ -4,12 +4,12 @@ Summary(fr):	Client talk pour les conversations à deux sur l'Internet
 Summary(pl):	Klient talk do rozmów jeden-na-jeden w Internecie
 Summary(tr):	Internet üzerinde birebir konuþma - talk - sistemi
 Name:		ntalk
-Version:	0.16
-Release:	4
+Version:	0.17
+Release:	0
 License:	BSD
 Group:		Applications/Networking
 Group(pl):	Aplikacje/Sieciowe
-Source0:	ftp://sunsite.unc.edu/pub/Linux/system/network/chat/netkit-%{name}-%{version}.tar.gz
+Source0:	ftp://ftp.linux.org.uk/pub/linux/Networking/netkit/netkit-%{name}-%{version}.tar.gz
 Source1:	ntalkd.inetd
 Source2:	talkd.inetd
 Patch0:		netkit-ntalk-misc.patch
