@@ -95,6 +95,7 @@ make RPM_OPT_FLAGS="$RPM_OPT_FLAGS -fno-strict-aliasing -w -I%{_includedir}/ncur
 rm -rf $RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_sbindir},%{_mandir}/man{1,8}}
+install -d $RPM_BUILD_ROOT/etc/sysconfig/rc-inetd
 
 make install INSTALLROOT=$RPM_BUILD_ROOT MANDIR=%{_mandir}
 
