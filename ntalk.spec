@@ -79,7 +79,7 @@ allows one-on-one chatting between users on different systems.
 Dieses Paket enthält einen Dämon für das Internet-Talk- Protokoll, das
 das Chatten von zwei Benutzern auf verschiedenen Systemen ermöglicht.
 
-%description -l es
+%description -l es -n ntalkd
 Diálogo de servidor charlas uno a uno en internet.
 
 %description -l fr -n ntalkd
@@ -91,7 +91,7 @@ différents systèmes.
 Pakiet ten zawiera serwe internetowego protoko³u talk, który umo¿liwia
 komunikacjê miêdzy u¿ytkownikami na ró¿nych systemach.
 
-%description -l pt_BR server
+%description -l pt_BR -n ntalkd
 Servidor talk,
 
 %description -l tr -n ntalkd
@@ -107,7 +107,7 @@ göreceklerdir.
 %patch1 -p1
 
 %build
-./configure --with-c-compiler=gcc
+./configure --with-c-compiler=%{__cc}
 %{__make}
 
 %install
