@@ -96,11 +96,11 @@ la conversation un-a-un dans la discussion entre les utilisateurs de
 différents systèmes.
 
 %description -n ntalkd -l pl
-Pakiet ten zawiera serwe internetowego protoko³u talk, który umo¿liwia
+Pakiet ten zawiera serwer internetowego protoko³u talk, który umo¿liwia
 komunikacjê miêdzy u¿ytkownikami na ró¿nych systemach.
 
 %description -n ntalkd -l pt_BR
-Servidor talk,
+Servidor talk.
 
 %description -n ntalkd -l tr
 Bu paket internet talk hizmeti için bir istemci ve sunucu
