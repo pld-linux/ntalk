@@ -9,13 +9,16 @@ Release:	1
 Copyright:	BSD
 Group:		Networking/Daemons
 Group(pl):	Sieciowe/Serwery
-Source:		ftp://sunsite.unc.edu/pub/Linux/system/network/chat/netkit-ntalk-%{version}.tar.gz
+Source0:	ftp://sunsite.unc.edu/pub/Linux/system/network/chat/netkit-ntalk-%{version}.tar.gz
+Source1:	ntalkd.inetd
+Source2:	talkd.inetd
 Patch0:		netkit-ntalk-misc.patch
 Patch1:		netkit-ntalk-install.patch
 Patch2:		netkit-ntalk-otalk.patch
 Requires:	inetdaemon
 BuildRequires:	ncurses-devel
 Obsoletes:	talk
+Prereq:		rc-inetd
 Buildroot:	/tmp/%{name}-%{version}-root
 
 %description
@@ -86,7 +89,7 @@ unset POSIXLY_CORRECT
 
 %build
 
-make RPM_OPT_FLAGS="$RPM_OPT_FLAGS -w -I%{_includedir}/ncurses"
+make RPM_OPT_FLAGS="$RPM_OPT_FLAGS -fno-strict-aliasing -w -I%{_includedir}/ncurses"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -95,11 +98,26 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_sbindir},%{_mandir}/man{1,8}}
 
 make install INSTALLROOT=$RPM_BUILD_ROOT MANDIR=%{_mandir}
 
+install %{SOURCE1} $RPM_BUILD_ROOT/etc/sysconfig/rc-inetd/ntalkd
+install %{SOURCE2} $RPM_BUILD_ROOT/etc/sysconfig/rc-inetd/talkd
+
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man[18]/* \
 	README BUGS
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post
+if [ -f /var/lock/subsys/rc-inetd ]; then
+	/etc/rc.d/init.d/rc-inetd restart 1>&2
+else
+	echo "Type \"/etc/rc.d/init.d/rc-inetd start\" to start inet sever" 1>&2
+fi
+
+%postun
+if [ -f /var/lock/subsys/rc-inetd ]; then
+	/etc/rc.d/init.d/rc-inetd stop
+fi
 
 %files
 %defattr(644,root,root,755)
@@ -111,4 +129,5 @@ rm -rf $RPM_BUILD_ROOT
 %files client
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/talk
+%attr(640,root,root) %config(noreplace) %verify(not mtime md5 size) /etc/sysconfig/rc-inetd/*
 %{_mandir}/man1/talk.1.gz
