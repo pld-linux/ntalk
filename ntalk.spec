@@ -84,7 +84,7 @@ tarafýn yazdýklarýný ise üst kýsýmda göreceklerdir.
 
 %build
 
-make RPM_OPT_FLAGS="$RPM_OPT_FLAGS -w -I/usr/include/ncurses"
+make RPM_OPT_FLAGS="$RPM_OPT_FLAGS -w -I%{_includedir}/ncurses"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -103,7 +103,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README.gz BUGS.gz
 
-%attr(711,root,root) /usr/sbin/*
+%attr(711,root,root) %{_sbindir}/*
 %{_mandir}/man8/*
 
 %files client
