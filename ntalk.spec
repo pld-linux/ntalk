@@ -91,7 +91,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_sbindir},%{_mandir}/man{1,8}}
 install -d $RPM_BUILD_ROOT/etc/sysconfig/rc-inetd
 
-make install INSTALLROOT=$RPM_BUILD_ROOT MANDIR=%{_mandir}
+%{__make} install INSTALLROOT=$RPM_BUILD_ROOT MANDIR=%{_mandir}
 
 install %{SOURCE1} $RPM_BUILD_ROOT/etc/sysconfig/rc-inetd/ntalkd
 install %{SOURCE2} $RPM_BUILD_ROOT/etc/sysconfig/rc-inetd/talkd
