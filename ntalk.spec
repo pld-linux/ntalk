@@ -71,26 +71,26 @@ Obsoletes:	talk-server
 This package provides a daemon for the Internet talk protocol, which
 allows one-on-one chatting between users on different systems.
 
-%description -l de -n ntalkd
+%description -n ntalkd -l de
 Dieses Paket enthält einen Dämon für das Internet-Talk- Protokoll, das
 das Chatten von zwei Benutzern auf verschiedenen Systemen ermöglicht.
 
-%description -l es -n ntalkd
+%description -n ntalkd -l es
 Diálogo de servidor charlas uno a uno en internet.
 
-%description -l fr -n ntalkd
+%description -n ntalkd -l fr
 Ce package offre un démon pour le 'Internet Talk Protocol', qui permet
 la conversation un-a-un dans la discussion entre les utilisateurs de
 différents systèmes.
 
-%description -l pl -n ntalkd
+%description -n ntalkd -l pl
 Pakiet ten zawiera serwe internetowego protoko³u talk, który umo¿liwia
 komunikacjê miêdzy u¿ytkownikami na ró¿nych systemach.
 
-%description -l pt_BR -n ntalkd
+%description -n ntalkd -l pt_BR
 Servidor talk,
 
-%description -l tr -n ntalkd
+%description -n ntalkd -l tr
 Bu paket internet talk hizmeti için bir istemci ve sunucu
 içermektedir. Bu program 'konuþmak' isteyen kiþilerin terminalinde iki
 bölüm açacaktýr. Kullanýcýlardan her biri kendi yazdýklarýný ekranýn
