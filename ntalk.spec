@@ -55,6 +55,7 @@ Group(de):	Netzwerkwesen/Server
 Group(pl):	Sieciowe/Serwery
 Requires:	inetdaemon
 Prereq:		rc-inetd >= 0.8.1
+Provides:	talkd
 Obsoletes:	talk-server
 
 %description -n ntalkd
