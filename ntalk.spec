@@ -7,7 +7,7 @@ Summary(pt_BR):	Conversa de cliente para um-em-um para Internet
 Summary(tr):	Internet üzerinde birebir konuþma - talk - sistemi
 Name:		ntalk
 Version:	0.17
-Release:	4
+Release:	5
 License:	BSD
 Group:		Applications/Networking
 Source0:	ftp://ftp.linux.org.uk/pub/linux/Networking/netkit/netkit-%{name}-%{version}.tar.gz
@@ -117,8 +117,6 @@ install %{SOURCE1} $RPM_BUILD_ROOT/etc/sysconfig/rc-inetd/ntalkd
 install %{SOURCE2} $RPM_BUILD_ROOT/etc/sysconfig/rc-inetd/talkd
 bzip2 -dc %{SOURCE3} | tar xf - -C $RPM_BUILD_ROOT%{_mandir}
 
-gzip -9nf README BUGS
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -147,7 +145,7 @@ fi
 
 %files -n ntalkd
 %defattr(644,root,root,755)
-%doc README.gz BUGS.gz
+%doc README BUGS
 %attr(755,root,root) %{_sbindir}/*
 %{_mandir}/man8/*
 %lang(ja) %{_mandir}/ja/man8/*
