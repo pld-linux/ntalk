@@ -14,6 +14,7 @@ Patch0:		netkit-ntalk-misc.patch
 Patch1:		netkit-ntalk-install.patch
 Patch2:		netkit-ntalk-glibc21.patch
 Requires:	inetd
+BuildPrereq:	ncurses-devel
 Obsoletes:	talk
 Buildroot:	/tmp/%{name}-%{version}-root
 
@@ -111,8 +112,11 @@ rm -rf $RPM_BUILD_ROOT
 /usr/man/man1/talk.1.gz
 
 %changelog
-* Fri Apr 16 1999 Piotr Czerwiñski <pius@pld.org.pl>
+* Mon Apr 19 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
   [0.11-1]
+- added "BuildPrereq: ncurses-devel".
+
+* Fri Apr 16 1999 Piotr Czerwiñski <pius@pld.org.pl>
 - updated to 0.11,
 - added ntalk-client subpackage,
 - added Obsoletes: talk,
