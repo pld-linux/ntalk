@@ -1,6 +1,6 @@
 SERVICE_NAME=talk
 SOCK_TYPE=dgram
-PROTOCOL=tcp
+PROTOCOL=udp
 PORT=517
 FLAGS=wait
 USER=root
