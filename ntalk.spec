@@ -14,7 +14,7 @@ Source1:	ntalkd.inetd
 Source2:	talkd.inetd
 Patch0:		netkit-ntalk-misc.patch
 BuildRequires:	ncurses-devel >= 5.0
-Buildroot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	talk
 Obsoletes:	ntalk-client
 
