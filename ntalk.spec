@@ -1,7 +1,9 @@
 Summary:	Talk client for one-on-one Internet chatting
 Summary(de):	Talk-client für 1:1-Internet-Schwätzchen
+Summary(es):	Diálogo de cliente charlas uno a uno en internet
 Summary(fr):	Client talk pour les conversations à deux sur l'Internet
 Summary(pl):	Klient talk do rozmów jeden-na-jeden w Internecie
+Summary(pt_BR):	Conversa de cliente para um-em-um para Internet
 Summary(tr):	Internet üzerinde birebir konuþma - talk - sistemi
 Name:		ntalk
 Version:	0.17
@@ -30,6 +32,9 @@ Dieses Paket enthält einen Client für das Internet-Talk- Protokoll,
 das das Chatten von zwei Benutzern auf verschiedenen Systemen
 ermöglicht.
 
+%description -l es
+Diálogo de cliente charlas uno a uno en internet.
+
 %description -l fr
 Ce package offre un client pour le 'Internet Talk Protocol', qui
 permet la conversation un-a-un dans la discussion entre les
@@ -38,6 +43,10 @@ utilisateurs de différents systèmes.
 %description -l pl
 Pakiet ten zawiera klienta dla internetowego protoko³u talk, który
 umo¿liwia komunikacjê miêdzy u¿ytkownikami na ró¿nych systemach.
+
+%description -l pt_BR
+Este pacote fornece um cliente e um daemon para o protocolo talk, que
+permite a conversa um-para-um entre usuários em diferentes sistemas.
 
 %description -l tr
 Bu paket internet talk hizmeti için bir istemci ve sunucu
@@ -49,8 +58,10 @@ göreceklerdir.
 %package -n ntalkd
 Summary:	Talk daemon for one-on-one Internet chatting
 Summary(de):	Talk-daemon für 1:1-Internet-Schwätzchen
+Summary(es):	Servidor de diálogo charlas uno a uno en internet
 Summary(fr):	Daemon talk pour les conversations à deux sur l'Internet
 Summary(pl):	Serwer talk do rozmów jeden-na-jeden w Internecie
+Summary(pt_BR):	Servidor de conversa um-em-um internet
 Summary(tr):	Internet üzerinde birebir konuþma - talk - sistemi
 Group:		Networking/Daemons
 Group(de):	Netzwerkwesen/Server
@@ -68,6 +79,9 @@ allows one-on-one chatting between users on different systems.
 Dieses Paket enthält einen Dämon für das Internet-Talk- Protokoll, das
 das Chatten von zwei Benutzern auf verschiedenen Systemen ermöglicht.
 
+%description -l es
+Diálogo de servidor charlas uno a uno en internet.
+
 %description -l fr -n ntalkd
 Ce package offre un démon pour le 'Internet Talk Protocol', qui permet
 la conversation un-a-un dans la discussion entre les utilisateurs de
@@ -76,6 +90,9 @@ différents systèmes.
 %description -l pl -n ntalkd
 Pakiet ten zawiera serwe internetowego protoko³u talk, który umo¿liwia
 komunikacjê miêdzy u¿ytkownikami na ró¿nych systemach.
+
+%description -l pt_BR server
+Servidor talk,
 
 %description -l tr -n ntalkd
 Bu paket internet talk hizmeti için bir istemci ve sunucu
