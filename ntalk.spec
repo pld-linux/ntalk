@@ -93,7 +93,7 @@ install -d $RPM_BUILD_ROOT/usr/{bin,sbin,man/{man1,man8}}
 
 make INSTALLROOT=$RPM_BUILD_ROOT install
 
-gzip -9nf $RPM_BUILD_ROOT/usr/man/man[18]/* \
+gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man[18]/* \
 	README BUGS
 
 %clean
@@ -104,12 +104,12 @@ rm -rf $RPM_BUILD_ROOT
 %doc README.gz BUGS.gz
 
 %attr(711,root,root) /usr/sbin/*
-/usr/man/man8/*
+%{_mandir}/man8/*
 
 %files client
 %defattr(644,root,root,755)
 %attr(755,root,root) /usr/bin/talk
-/usr/man/man1/talk.1.gz
+%{_mandir}/man1/talk.1.gz
 
 %changelog
 * Mon Apr 19 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
