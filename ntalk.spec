@@ -9,7 +9,7 @@ Summary(tr):	Internet üzerinde birebir konuþma - talk - sistemi
 Summary(uk):	äÅÍÏÎ ÔÁ ËÌ¦¤ÎÔ talk
 Name:		ntalk
 Version:	0.17
-Release:	7
+Release:	8
 License:	BSD
 Group:		Applications/Networking
 Source0:	ftp://ftp.linux.org.uk/pub/linux/Networking/netkit/netkit-%{name}-%{version}.tar.gz
@@ -22,6 +22,7 @@ Patch0:		netkit-%{name}-misc.patch
 Patch1:		%{name}-include.patch
 BuildRequires:	ncurses-devel >= 5.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Obsoletes:	inetutils-talk
 Obsoletes:	talk
 Obsoletes:	ntalk-client
 
@@ -77,6 +78,7 @@ Group:		Networking/Daemons
 Requires:	inetdaemon
 Prereq:		rc-inetd >= 0.8.1
 Provides:	talkd
+Obsoletes:	inetutils-talkd
 Obsoletes:	talk-server
 
 %description -n ntalkd
