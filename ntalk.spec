@@ -83,7 +83,7 @@ tarafýn yazdýklarýný ise üst kýsýmda göreceklerdir.
 %build
 LDLAGS="-s" \
 ./configure
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
