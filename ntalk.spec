@@ -5,7 +5,7 @@ Summary(pl):	Klient talk do rozmów jeden-na-jeden w Internecie
 Summary(tr):	Internet üzerinde birebir konuþma - talk - sistemi
 Name:		ntalk
 Version:	0.17
-Release:	2
+Release:	3
 License:	BSD
 Group:		Applications/Networking
 Group(de):	Applikationen/Netzwerkwesen
@@ -13,6 +13,7 @@ Group(pl):	Aplikacje/Sieciowe
 Source0:	ftp://ftp.linux.org.uk/pub/linux/Networking/netkit/netkit-%{name}-%{version}.tar.gz
 Source1:	%{name}d.inetd
 Source2:	talkd.inetd
+Source3:	%{name}-non-english-man-pages.tar.bz2
 Patch0:		netkit-%{name}-misc.patch
 BuildRequires:	ncurses-devel >= 5.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -99,6 +100,7 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_sbindir},%{_mandir}/man{1,8}} \
 
 install %{SOURCE1} $RPM_BUILD_ROOT/etc/sysconfig/rc-inetd/ntalkd
 install %{SOURCE2} $RPM_BUILD_ROOT/etc/sysconfig/rc-inetd/talkd
+bzip2 -dc %{SOURCE3} | tar xf - -C $RPM_BUILD_ROOT%{_mandir}
 
 gzip -9nf README BUGS
 
@@ -121,10 +123,17 @@ fi
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/talk
 %{_mandir}/man1/talk.1*
+%lang(fi) %{_mandir}/fi/man1/talk.1*
+%lang(fr) %{_mandir}/fr/man1/talk.1*
+%lang(hu) %{_mandir}/hu/man1/talk.1*
+%lang(it) %{_mandir}/it/man1/talk.1*
+%lang(ja) %{_mandir}/ja/man1/talk.1*
+%lang(pl) %{_mandir}/pl/man1/talk.1*
 
 %files -n ntalkd
 %defattr(644,root,root,755)
 %doc README.gz BUGS.gz
 %attr(755,root,root) %{_sbindir}/*
 %{_mandir}/man8/*
+%lang(ja) %{_mandir}/ja/man8/*
 %attr(640,root,root) %config(noreplace) %verify(not mtime md5 size) /etc/sysconfig/rc-inetd/*
