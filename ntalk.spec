@@ -50,7 +50,7 @@ Summary(pl):    Klient talk do rozmów jeden-na-jeden w Internecie.
 Summary(tr):    Internet üzerinde birebir konuþma - talk - sistemi.
 Group:          Aplications/Networking
 Group(pl):      Aplikacje/Sieciowe
-Requires:	%{name}-%{version}
+Requires:	%{name} = %{version}
 
 %description client
 This package provides a client for the Internet talk protocol,
