@@ -12,7 +12,7 @@ Group(pl):	Sieciowe/Serwery
 Source:		ftp://sunsite.unc.edu/pub/Linux/system/network/chat/netkit-ntalk-%{version}.tar.gz
 Patch0:		netkit-ntalk-misc.patch
 Patch1:		netkit-ntalk-install.patch
-Patch2:		netkit-ntalk-glibc21.patch
+Patch2:		netkit-ntalk-otalk.patch
 Requires:	inetd
 BuildRequires:	ncurses-devel
 Obsoletes:	talk
@@ -80,7 +80,9 @@ tarafýn yazdýklarýný ise üst kýsýmda göreceklerdir.
 %setup -q -n netkit-ntalk-0.11
 %patch0 -p1
 %patch1 -p1
-%patch2 -p1
+export POSIXLY_CORRECT=1
+%patch2 -p0
+unset POSIXLY_CORRECT
 
 %build
 
