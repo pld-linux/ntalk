@@ -14,7 +14,7 @@ Patch0:		netkit-ntalk-misc.patch
 Patch1:		netkit-ntalk-install.patch
 Patch2:		netkit-ntalk-glibc21.patch
 Requires:	inetd
-BuildPrereq:	ncurses-devel
+BuildRequires:	ncurses-devel
 Obsoletes:	talk
 Buildroot:	/tmp/%{name}-%{version}-root
 
