@@ -1,24 +1,65 @@
---- netkit-ntalk-0.10/MCONFIG.ewt	Tue Jul 15 12:01:08 1997
-+++ netkit-ntalk-0.10/MCONFIG	Tue Jul 15 12:01:29 1997
-@@ -30,10 +30,10 @@
- CC=gcc
+diff -Nru netkit-ntalk-0.16/configure netkit-ntalk-0.16.new/configure
+--- netkit-ntalk-0.16/configure	Sun Dec 12 19:35:57 1999
++++ netkit-ntalk-0.16.new/configure	Sat Jan  1 21:12:54 2000
+@@ -119,10 +119,10 @@
+ if [ x$DEBUG = x ]; then
+     echo -n "Checking if $CC accepts -O2... "
+     if (
+-         $CC -O2 __conftest.c -o __conftest
++         $CC $RPM_OPT_FLAGS __conftest.c -o __conftest
+        ) >/dev/null 2>&1; then
+          echo 'yes'
+-         CFLAGS="$CFLAGS -O2"
++         CFLAGS="$CFLAGS $RPM_OPT_FLAGS"
+     else
+          echo 'no'
+          echo -n "Checking if $CC accepts -O... "
+@@ -149,7 +149,7 @@
  
- # Compiler warnings
--WARNINGS= -Wall -W -Wpointer-arith -Wbad-function-cast -Wcast-qual -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Winline -Wcast-align
-+WARNINGS= -Wall -W -Wpointer-arith -Wbad-function-cast -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Winline -Wcast-align
+ fi
  
- # Compiler flags to use
--CFLAGS= -pipe -O2 $(WARNINGS)
-+CFLAGS= -pipe $(RPM_OPT_FLAGS) $(WARNINGS)
+-LDFLAGS=
++LDFLAGS=$LDFLAGS
+ LIBS=
  
- # Link-time flags to use
- LDFLAGS= -s
-@@ -49,7 +49,7 @@
+ rm -f __conftest*
+diff -Nru netkit-ntalk-0.16/talkd/Makefile netkit-ntalk-0.16.new/talkd/Makefile
+--- netkit-ntalk-0.16/talkd/Makefile	Sun Aug  1 05:20:44 1999
++++ netkit-ntalk-0.16.new/talkd/Makefile	Sat Jan  1 21:14:15 2000
+@@ -14,11 +14,7 @@
  
+ install: talkd
+ 	install -s -m$(DAEMONMODE) talkd $(INSTALLROOT)$(SBINDIR)/in.ntalkd
+-	ln -sf in.ntalkd $(INSTALLROOT)$(SBINDIR)/in.talkd
+ 	install -m$(MANMODE) talkd.8 $(INSTALLROOT)$(MANDIR)/man8/in.ntalkd.8
+-	ln -sf in.ntalkd.8 $(INSTALLROOT)$(MANDIR)/man8/in.talkd.8
+-	ln -sf in.ntalkd.8 $(INSTALLROOT)$(MANDIR)/man8/ntalkd.8
+-	ln -sf in.talkd.8 $(INSTALLROOT)$(MANDIR)/man8/talkd.8
  
- # Work around GNU libc lossage
--USE_GLIBC=0
-+USE_GLIBC=1
- 
- 
- 
+ clean:
+ 	rm -f *.o talkd
+diff -Nru netkit-ntalk-0.16/talkd/talkd.8 netkit-ntalk-0.16.new/talkd/talkd.8
+--- netkit-ntalk-0.16/talkd/talkd.8	Tue Dec 14 13:52:53 1999
++++ netkit-ntalk-0.16.new/talkd/talkd.8	Sat Jan  1 21:16:36 2000
+@@ -36,10 +36,10 @@
+ .Dt TALKD 8
+ .Os "Linux NetKit (0.16)"
+ .Sh NAME
+-.Nm talkd
++.Nm in.talkd
+ .Nd remote user communication server
+ .Sh SYNOPSIS
+-.Nm talkd
++.Nm in.talkd
+ .Op Fl dp
+ .Sh DESCRIPTION
+ .Nm Talkd
+@@ -79,8 +79,3 @@
+ .Sh SEE ALSO
+ .Xr talk 1 ,
+ .Xr write 1
+-.Sh HISTORY
+-The
+-.Nm
+-command appeared in
+-.Bx 4.3 .
