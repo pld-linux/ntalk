@@ -5,4 +5,4 @@ PORT=518
 FLAGS=wait
 USER=root
 SERVER=tcpd
-DAEMON=/usr/sbin/ntalkd
+DAEMON=/usr/sbin/in.ntalkd
