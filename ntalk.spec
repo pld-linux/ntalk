@@ -108,7 +108,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files client
 %defattr(644,root,root,755)
-%attr(755,root,root) /usr/bin/talk
+%attr(755,root,root) %{_bindir}/talk
 %{_mandir}/man1/talk.1.gz
 
 %changelog
