@@ -10,8 +10,6 @@ Version:	0.17
 Release:	4
 License:	BSD
 Group:		Applications/Networking
-Group(de):	Applikationen/Netzwerkwesen
-Group(pl):	Aplikacje/Sieciowe
 Source0:	ftp://ftp.linux.org.uk/pub/linux/Networking/netkit/netkit-%{name}-%{version}.tar.gz
 Source1:	%{name}d.inetd
 Source2:	talkd.inetd
@@ -64,8 +62,6 @@ Summary(pl):	Serwer talk do rozmów jeden-na-jeden w Internecie
 Summary(pt_BR):	Servidor de conversa um-em-um internet
 Summary(tr):	Internet üzerinde birebir konuþma - talk - sistemi
 Group:		Networking/Daemons
-Group(de):	Netzwerkwesen/Server
-Group(pl):	Sieciowe/Serwery
 Requires:	inetdaemon
 Prereq:		rc-inetd >= 0.8.1
 Provides:	talkd
