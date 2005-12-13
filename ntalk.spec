@@ -52,8 +52,9 @@ Este pacote fornece um cliente e um daemon para o protocolo talk, que
 permite a conversa um-para-um entre usuАrios em diferentes sistemas.
 
 %description -l ru
-В этом пакете содержится клиент и демон протокола Internet talk, который
-позволяет организовать чат между пользователями на разных системах.
+В этом пакете содержится клиент и демон протокола Internet talk,
+который позволяет организовать чат между пользователями на разных
+системах.
 
 %description -l tr
 Bu paket internet talk hizmeti iГin bir istemci ve sunucu
@@ -98,8 +99,8 @@ la conversation un-a-un dans la discussion entre les utilisateurs de
 diffИrents systХmes.
 
 %description -n ntalkd -l pl
-Pakiet ten zawiera serwer internetowego protokoЁu talk, ktСry umo©liwia
-komunikacjЙ miЙdzy u©ytkownikami na rС©nych systemach.
+Pakiet ten zawiera serwer internetowego protokoЁu talk, ktСry
+umo©liwia komunikacjЙ miЙdzy u©ytkownikami na rС©nych systemach.
 
 %description -n ntalkd -l pt_BR
 Servidor talk.
@@ -112,7 +113,7 @@ alt kЩsmЩnda, karЧЩ tarafЩn yazdЩklarЩnЩ ise Эst kЩsЩmda
 gЖreceklerdir.
 
 %prep
-%setup -q -n netkit-ntalk-%{version}
+%setup -q -n netkit-%{name}-%{version}
 %patch0 -p1
 %patch1 -p1
 
@@ -163,4 +164,4 @@ fi
 %attr(755,root,root) %{_sbindir}/*
 %{_mandir}/man8/*
 %lang(ja) %{_mandir}/ja/man8/*
-%attr(640,root,root) %config(noreplace) %verify(not mtime md5 size) /etc/sysconfig/rc-inetd/*
+%attr(640,root,root) %config(noreplace) %verify(not md5 mtime size) /etc/sysconfig/rc-inetd/*
