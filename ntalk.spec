@@ -118,7 +118,8 @@ göreceklerdir.
 %patch1 -p1
 
 %build
-./configure --with-c-compiler=%{__cc}
+./configure \
+	--with-c-compiler="%{__cc}"
 %{__make}
 
 %install
