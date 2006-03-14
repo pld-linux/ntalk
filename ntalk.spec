@@ -21,10 +21,11 @@ Source3:	http://www.mif.pg.gda.pl/homepages/ankry/man-PLD/%{name}-non-english-ma
 Patch0:		netkit-%{name}-misc.patch
 Patch1:		%{name}-include.patch
 BuildRequires:	ncurses-devel >= 5.0
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRequires:	rpmbuild(macros) >= 1.268
 Obsoletes:	inetutils-talk
-Obsoletes:	talk
 Obsoletes:	ntalk-client
+Obsoletes:	talk
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This package provides a client for the Internet talk protocol, which
@@ -77,7 +78,7 @@ Summary(pt_BR):	Servidor de conversa um-em-um internet
 Summary(tr):	Internet üzerinde birebir konuþma - talk - sistemi
 Group:		Networking/Daemons
 Requires:	inetdaemon
-Prereq:		rc-inetd >= 0.8.1
+Requires:	rc-inetd >= 0.8.1
 Provides:	talkd
 Obsoletes:	inetutils-talkd
 Obsoletes:	talk-server
@@ -137,15 +138,11 @@ bzip2 -dc %{SOURCE3} | tar xf - -C $RPM_BUILD_ROOT%{_mandir}
 rm -rf $RPM_BUILD_ROOT
 
 %post -n ntalkd
-if [ -f /var/lock/subsys/rc-inetd ]; then
-	/etc/rc.d/init.d/rc-inetd reload 1>&2
-else
-	echo "Type \"/etc/rc.d/init.d/rc-inetd start\" to start inet server" 1>&2
-fi
+%service -q rc-inetd reload
 
 %postun -n ntalkd
-if [ -f /var/lock/subsys/rc-inetd ]; then
-	/etc/rc.d/init.d/rc-inetd reload 1>&2
+if [ "$1" = 0 ]; then
+	%service -q rc-inetd reload
 fi
 
 %files
