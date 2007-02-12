@@ -1,12 +1,12 @@
 Summary:	Talk client for one-on-one Internet chatting
-Summary(de):	Talk-client für 1:1-Internet-Schwätzchen
-Summary(es):	Diálogo de cliente charlas uno a uno en internet
-Summary(fr):	Client talk pour les conversations à deux sur l'Internet
-Summary(pl):	Klient talk do rozmów jeden-na-jeden w Internecie
-Summary(pt_BR):	Conversa de cliente para um-em-um para Internet
-Summary(ru):	äÅÍÏÎ É ËÌÉÅÎÔ talk
-Summary(tr):	Internet üzerinde birebir konuşma - talk - sistemi
-Summary(uk):	äÅÍÏÎ ÔÁ ËÌ¦¤ÎÔ talk
+Summary(de.UTF-8):   Talk-client fÃ¼r 1:1-Internet-SchwÃ¤tzchen
+Summary(es.UTF-8):   DiÃ¡logo de cliente charlas uno a uno en internet
+Summary(fr.UTF-8):   Client talk pour les conversations Ã  deux sur l'Internet
+Summary(pl.UTF-8):   Klient talk do rozmÃ³w jeden-na-jeden w Internecie
+Summary(pt_BR.UTF-8):   Conversa de cliente para um-em-um para Internet
+Summary(ru.UTF-8):   Ğ”ĞµĞ¼Ğ¾Ğ½ Ğ¸ ĞºĞ»Ğ¸ĞµĞ½Ñ‚ talk
+Summary(tr.UTF-8):   Internet Ã¼zerinde birebir konuÅŸma - talk - sistemi
+Summary(uk.UTF-8):   Ğ”ĞµĞ¼Ğ¾Ğ½ Ñ‚Ğ° ĞºĞ»Ñ–Ñ”Ğ½Ñ‚ talk
 Name:		ntalk
 Version:	0.17
 Release:	8
@@ -31,51 +31,51 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This package provides a client for the Internet talk protocol, which
 allows one-on-one chatting between users on different systems.
 
-%description -l de
-Dieses Paket enthält einen Client für das Internet-Talk- Protokoll,
+%description -l de.UTF-8
+Dieses Paket enthÃ¤lt einen Client fÃ¼r das Internet-Talk- Protokoll,
 das das Chatten von zwei Benutzern auf verschiedenen Systemen
-ermöglicht.
+ermÃ¶glicht.
 
-%description -l es
-Diálogo de cliente charlas uno a uno en internet.
+%description -l es.UTF-8
+DiÃ¡logo de cliente charlas uno a uno en internet.
 
-%description -l fr
+%description -l fr.UTF-8
 Ce package offre un client pour le 'Internet Talk Protocol', qui
 permet la conversation un-a-un dans la discussion entre les
-utilisateurs de différents systèmes.
+utilisateurs de diffÃ©rents systÃ¨mes.
 
-%description -l pl
-Pakiet ten zawiera klienta dla internetowego protoko³u talk, który
-umo¿liwia komunikacjê miêdzy u¿ytkownikami na ró¿nych systemach.
+%description -l pl.UTF-8
+Pakiet ten zawiera klienta dla internetowego protokoÅ‚u talk, ktÃ³ry
+umoÅ¼liwia komunikacjÄ™ miÄ™dzy uÅ¼ytkownikami na rÃ³Å¼nych systemach.
 
-%description -l pt_BR
+%description -l pt_BR.UTF-8
 Este pacote fornece um cliente e um daemon para o protocolo talk, que
-permite a conversa um-para-um entre usuários em diferentes sistemas.
+permite a conversa um-para-um entre usuÃ¡rios em diferentes sistemas.
 
-%description -l ru
-÷ ÜÔÏÍ ĞÁËÅÔÅ ÓÏÄÅÒÖÉÔÓÑ ËÌÉÅÎÔ É ÄÅÍÏÎ ĞÒÏÔÏËÏÌÁ Internet talk,
-ËÏÔÏÒÙÊ ĞÏÚ×ÏÌÑÅÔ ÏÒÇÁÎÉÚÏ×ÁÔØ ŞÁÔ ÍÅÖÄÕ ĞÏÌØÚÏ×ÁÔÅÌÑÍÉ ÎÁ ÒÁÚÎÙÈ
-ÓÉÓÔÅÍÁÈ.
+%description -l ru.UTF-8
+Ğ’ ÑÑ‚Ğ¾Ğ¼ Ğ¿Ğ°ĞºĞµÑ‚Ğµ ÑĞ¾Ğ´ĞµÑ€Ğ¶Ğ¸Ñ‚ÑÑ ĞºĞ»Ğ¸ĞµĞ½Ñ‚ Ğ¸ Ğ´ĞµĞ¼Ğ¾Ğ½ Ğ¿Ñ€Ğ¾Ñ‚Ğ¾ĞºĞ¾Ğ»Ğ° Internet talk,
+ĞºĞ¾Ñ‚Ğ¾Ñ€Ñ‹Ğ¹ Ğ¿Ğ¾Ğ·Ğ²Ğ¾Ğ»ÑĞµÑ‚ Ğ¾Ñ€Ğ³Ğ°Ğ½Ğ¸Ğ·Ğ¾Ğ²Ğ°Ñ‚ÑŒ Ñ‡Ğ°Ñ‚ Ğ¼ĞµĞ¶Ğ´Ñƒ Ğ¿Ğ¾Ğ»ÑŒĞ·Ğ¾Ğ²Ğ°Ñ‚ĞµĞ»ÑĞ¼Ğ¸ Ğ½Ğ° Ñ€Ğ°Ğ·Ğ½Ñ‹Ñ…
+ÑĞ¸ÑÑ‚ĞµĞ¼Ğ°Ñ….
 
-%description -l tr
-Bu paket internet talk hizmeti için bir istemci ve sunucu
-içermektedir. Bu program 'konuşmak' isteyen kişilerin terminalinde iki
-bölüm açacaktır. Kullanıcılardan her biri kendi yazdıklarını ekranın
-alt kısmında, karşı tarafın yazdıklarını ise üst kısımda
-göreceklerdir.
+%description -l tr.UTF-8
+Bu paket internet talk hizmeti iÃ§in bir istemci ve sunucu
+iÃ§ermektedir. Bu program 'konuÅŸmak' isteyen kiÅŸilerin terminalinde iki
+bÃ¶lÃ¼m aÃ§acaktÄ±r. KullanÄ±cÄ±lardan her biri kendi yazdÄ±klarÄ±nÄ± ekranÄ±n
+alt kÄ±smÄ±nda, karÅŸÄ± tarafÄ±n yazdÄ±klarÄ±nÄ± ise Ã¼st kÄ±sÄ±mda
+gÃ¶receklerdir.
 
-%description -l uk
-ãÅÊ ĞÁËÅÔ Í¦ÓÔÉÔØ ËÌ¦¤ÎÔ ÔÁ ÄÅÍÏÎ ĞÒÏÔÏËÏÌÕ Internet talk, İÏ ÄÏÚ×ÏÌÑ¤
-ÏÒÇÁÎ¦ÚÕ×ÁÔÉ ŞÁÔ Í¦Ö ËÏÒÉÓÔÕ×ÁŞÁÍÉ ÎÁ Ò¦ÚÎÉÈ ÓÉÓÔÅÍÁÈ.
+%description -l uk.UTF-8
+Ğ¦ĞµĞ¹ Ğ¿Ğ°ĞºĞµÑ‚ Ğ¼Ñ–ÑÑ‚Ğ¸Ñ‚ÑŒ ĞºĞ»Ñ–Ñ”Ğ½Ñ‚ Ñ‚Ğ° Ğ´ĞµĞ¼Ğ¾Ğ½ Ğ¿Ñ€Ğ¾Ñ‚Ğ¾ĞºĞ¾Ğ»Ñƒ Internet talk, Ñ‰Ğ¾ Ğ´Ğ¾Ğ·Ğ²Ğ¾Ğ»ÑÑ”
+Ğ¾Ñ€Ğ³Ğ°Ğ½Ñ–Ğ·ÑƒĞ²Ğ°Ñ‚Ğ¸ Ñ‡Ğ°Ñ‚ Ğ¼Ñ–Ğ¶ ĞºĞ¾Ñ€Ğ¸ÑÑ‚ÑƒĞ²Ğ°Ñ‡Ğ°Ğ¼Ğ¸ Ğ½Ğ° Ñ€Ñ–Ğ·Ğ½Ğ¸Ñ… ÑĞ¸ÑÑ‚ĞµĞ¼Ğ°Ñ….
 
 %package -n ntalkd
 Summary:	Talk daemon for one-on-one Internet chatting
-Summary(de):	Talk-daemon für 1:1-Internet-Schwätzchen
-Summary(es):	Servidor de diálogo charlas uno a uno en internet
-Summary(fr):	Daemon talk pour les conversations à deux sur l'Internet
-Summary(pl):	Serwer talk do rozmów jeden-na-jeden w Internecie
-Summary(pt_BR):	Servidor de conversa um-em-um internet
-Summary(tr):	Internet üzerinde birebir konuşma - talk - sistemi
+Summary(de.UTF-8):   Talk-daemon fÃ¼r 1:1-Internet-SchwÃ¤tzchen
+Summary(es.UTF-8):   Servidor de diÃ¡logo charlas uno a uno en internet
+Summary(fr.UTF-8):   Daemon talk pour les conversations Ã  deux sur l'Internet
+Summary(pl.UTF-8):   Serwer talk do rozmÃ³w jeden-na-jeden w Internecie
+Summary(pt_BR.UTF-8):   Servidor de conversa um-em-um internet
+Summary(tr.UTF-8):   Internet Ã¼zerinde birebir konuÅŸma - talk - sistemi
 Group:		Networking/Daemons
 Requires:	inetdaemon
 Requires:	rc-inetd >= 0.8.1
@@ -87,31 +87,31 @@ Obsoletes:	talk-server
 This package provides a daemon for the Internet talk protocol, which
 allows one-on-one chatting between users on different systems.
 
-%description -n ntalkd -l de
-Dieses Paket enthält einen Dämon für das Internet-Talk- Protokoll, das
-das Chatten von zwei Benutzern auf verschiedenen Systemen ermöglicht.
+%description -n ntalkd -l de.UTF-8
+Dieses Paket enthÃ¤lt einen DÃ¤mon fÃ¼r das Internet-Talk- Protokoll, das
+das Chatten von zwei Benutzern auf verschiedenen Systemen ermÃ¶glicht.
 
-%description -n ntalkd -l es
-Diálogo de servidor charlas uno a uno en internet.
+%description -n ntalkd -l es.UTF-8
+DiÃ¡logo de servidor charlas uno a uno en internet.
 
-%description -n ntalkd -l fr
-Ce package offre un démon pour le 'Internet Talk Protocol', qui permet
+%description -n ntalkd -l fr.UTF-8
+Ce package offre un dÃ©mon pour le 'Internet Talk Protocol', qui permet
 la conversation un-a-un dans la discussion entre les utilisateurs de
-différents systèmes.
+diffÃ©rents systÃ¨mes.
 
-%description -n ntalkd -l pl
-Pakiet ten zawiera serwer internetowego protoko³u talk, który
-umo¿liwia komunikacjê miêdzy u¿ytkownikami na ró¿nych systemach.
+%description -n ntalkd -l pl.UTF-8
+Pakiet ten zawiera serwer internetowego protokoÅ‚u talk, ktÃ³ry
+umoÅ¼liwia komunikacjÄ™ miÄ™dzy uÅ¼ytkownikami na rÃ³Å¼nych systemach.
 
-%description -n ntalkd -l pt_BR
+%description -n ntalkd -l pt_BR.UTF-8
 Servidor talk.
 
-%description -n ntalkd -l tr
-Bu paket internet talk hizmeti için bir istemci ve sunucu
-içermektedir. Bu program 'konuşmak' isteyen kişilerin terminalinde iki
-bölüm açacaktır. Kullanıcılardan her biri kendi yazdıklarını ekranın
-alt kısmında, karşı tarafın yazdıklarını ise üst kısımda
-göreceklerdir.
+%description -n ntalkd -l tr.UTF-8
+Bu paket internet talk hizmeti iÃ§in bir istemci ve sunucu
+iÃ§ermektedir. Bu program 'konuÅŸmak' isteyen kiÅŸilerin terminalinde iki
+bÃ¶lÃ¼m aÃ§acaktÄ±r. KullanÄ±cÄ±lardan her biri kendi yazdÄ±klarÄ±nÄ± ekranÄ±n
+alt kÄ±smÄ±nda, karÅŸÄ± tarafÄ±n yazdÄ±klarÄ±nÄ± ise Ã¼st kÄ±sÄ±mda
+gÃ¶receklerdir.
 
 %prep
 %setup -q -n netkit-%{name}-%{version}
