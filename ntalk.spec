@@ -1,12 +1,12 @@
 Summary:	Talk client for one-on-one Internet chatting
-Summary(de.UTF-8):   Talk-client für 1:1-Internet-Schwätzchen
-Summary(es.UTF-8):   Diálogo de cliente charlas uno a uno en internet
-Summary(fr.UTF-8):   Client talk pour les conversations à deux sur l'Internet
-Summary(pl.UTF-8):   Klient talk do rozmów jeden-na-jeden w Internecie
-Summary(pt_BR.UTF-8):   Conversa de cliente para um-em-um para Internet
-Summary(ru.UTF-8):   Демон и клиент talk
-Summary(tr.UTF-8):   Internet üzerinde birebir konuşma - talk - sistemi
-Summary(uk.UTF-8):   Демон та клієнт talk
+Summary(de.UTF-8):	Talk-client für 1:1-Internet-Schwätzchen
+Summary(es.UTF-8):	Diálogo de cliente charlas uno a uno en internet
+Summary(fr.UTF-8):	Client talk pour les conversations à deux sur l'Internet
+Summary(pl.UTF-8):	Klient talk do rozmów jeden-na-jeden w Internecie
+Summary(pt_BR.UTF-8):	Conversa de cliente para um-em-um para Internet
+Summary(ru.UTF-8):	Демон и клиент talk
+Summary(tr.UTF-8):	Internet üzerinde birebir konuşma - talk - sistemi
+Summary(uk.UTF-8):	Демон та клієнт talk
 Name:		ntalk
 Version:	0.17
 Release:	8
@@ -70,12 +70,12 @@ göreceklerdir.
 
 %package -n ntalkd
 Summary:	Talk daemon for one-on-one Internet chatting
-Summary(de.UTF-8):   Talk-daemon für 1:1-Internet-Schwätzchen
-Summary(es.UTF-8):   Servidor de diálogo charlas uno a uno en internet
-Summary(fr.UTF-8):   Daemon talk pour les conversations à deux sur l'Internet
-Summary(pl.UTF-8):   Serwer talk do rozmów jeden-na-jeden w Internecie
-Summary(pt_BR.UTF-8):   Servidor de conversa um-em-um internet
-Summary(tr.UTF-8):   Internet üzerinde birebir konuşma - talk - sistemi
+Summary(de.UTF-8):	Talk-daemon für 1:1-Internet-Schwätzchen
+Summary(es.UTF-8):	Servidor de diálogo charlas uno a uno en internet
+Summary(fr.UTF-8):	Daemon talk pour les conversations à deux sur l'Internet
+Summary(pl.UTF-8):	Serwer talk do rozmów jeden-na-jeden w Internecie
+Summary(pt_BR.UTF-8):	Servidor de conversa um-em-um internet
+Summary(tr.UTF-8):	Internet üzerinde birebir konuşma - talk - sistemi
 Group:		Networking/Daemons
 Requires:	inetdaemon
 Requires:	rc-inetd >= 0.8.1
